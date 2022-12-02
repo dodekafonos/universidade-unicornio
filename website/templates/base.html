@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Unes - Home</title>
+</head>
+
+<body background="../static/imgs/fundo.png">
+
+    <div class="header">
+        <img src="../static/imgs/logo.png" alt="logo" id="logo">
+        <div>
+            <a href="./" class="links">Home</a>
+            <a href="quemsomos" class="links">Sobre</a>
+            <a href="contato" class="links">Contato</a>
+            <a href="info" class="links">Informações</a>
+        </div>
+    </div>
+    
+    <div class="conteudo">
+
+        {% block content %}
+        
+        {% endblock %}
+
+    </div>
+
+</body>
+</html>

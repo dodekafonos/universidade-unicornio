@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if info %}
+    <h1>Últimos emails recebidos:</h1>
+
+    <table class="tabela">
+        <tr>
+            <th>Email</th>
+            <th>Assunto</th>
+            <th>Descrição</th>
+        </tr>
+        {% for tupla in info %}
+        <tr>
+            <td> {{ tupla[0] }} </td>
+            <td> {{ tupla[1] }} </td>
+            <td> {{ tupla[2] }} </td>
+        </tr>
+        {% endfor %}
+        
+    </table> 
+{% else %}
+    <h1>Ainda não recebemos nenhum email.</h1>
+{% endif %}
+
+    <p class="direitos">Todos os direitos revervados</p>
+
+{% endblock %}

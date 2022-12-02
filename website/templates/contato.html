@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+    {% block content %}
+    
+        <h1>Contato</h1>
+        <h2>Entre em contato</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <hr>
+
+        <form action="{{ url_for('routes.contato')}}" method="post" >
+            
+            <label for="email">Seu email:</label><br>
+            <input type="text" name="email" placeholder="ads@fatec.sp.gov.br" id="email"><br>
+
+            <label for="assunto">Assunto:</label><br>
+            <input type="text" name="assunto" placeholder="Quero saber mais!" id="assunto"><br>
+
+            <label for="desc">Descrição:</label><br>
+            <textarea name="desc" placeholder="lorem ipsum" id="desc" cols="20" rows="5"></textarea><br>
+            
+            <input type="submit" value="Enviar">
+
+        </form>
+
+        <p class="direitos">Todos os direitos revervados</p>
+
+    {% endblock %}
